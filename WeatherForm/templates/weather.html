@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ CITY }}Weather App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+      h1 {
+        text-align: center;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+      .footer {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather for {{ CITY }}</h1>
+      <table>
+        <tr>
+          <th>Temperature</th>
+          <td>{{ temp_celsius }} &deg C / {{ temp_fahrenheit }} &deg F</td>
+        </tr>
+        <tr>
+          <th>Feels Like</th>
+          <td>{{ feels_like_celsius }} &deg C / {{ feels_like_fahrenheit }} &deg F</td>
+        </tr>
+        <tr>
+          <th>Humidity</th>
+          <td>{{ humidity }}%</td>
+        </tr>
+        <tr>
+          <th>Wind Speed</th>
+          <td>{{ wind_speed }} m/s</td>
+        </tr>
+        <tr>
+          <th>General Weather</th>
+          <td>{{ description }}</td>
+        </tr>
+        <tr>
+          <th>Sunrise</th>
+          <td>{{ sunrise_time }}</td>
+        </tr>
+        <tr>
+          <th>Sunset</th>
+          <td>{{ sunset_time }}</td>
+        </tr>
+      </table>
+      <p class="footer">Weather data provided by OpenWeatherMap</p>
+    </div>
+  </body>
+</html>
