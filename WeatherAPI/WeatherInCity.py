@@ -1,7 +1,7 @@
 import datetime as dt
 import requests
 
-# URL of the api we are using
+# URL of the API we are using
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 # Enter your API key here
 API_KEY = ""
