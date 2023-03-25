@@ -18,7 +18,7 @@ def k_to_c_f(kelvin):
 # Constructing a URL for making an API request to retrieve weather data for the given city.
 url = BASE_URL + "appid=" + API_KEY + "&q=" + CITY
 
-# Sending an HTTP GET request to the URL, and then convert the response from JSON format to a Python object.
+# Sending an HTTP GET request to the URL, and then converting the response from JSON format to a Python object.
 response = requests.get(url).json()
 
 # Extracting specific weather data from the API response, performing conversions where necessary, and storing the
